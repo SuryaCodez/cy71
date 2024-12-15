@@ -52,3 +52,9 @@ pthread_cond_destroy(&cond);
 return 0;
 
 }
+
+//sudo su
+//gedit p8.c
+//mpicc -o p8 p8.c
+//./p8
+// ctrl+z ( to stop infinite loop )
