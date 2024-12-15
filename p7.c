@@ -19,9 +19,8 @@ return NULL;
 } 
 int main() { 
 pthread_t threads[NUM_THREADS]; 
-int transactions[NUM_THREADS] = {-200, 100, -300, 150, -400};  // Transactions to 
-perform 
-pthread_mutex_init(&lock, NULL);  // Initialize mutex 
+int transactions[NUM_THREADS] = {-200, 100, -300, 150, -400};
+pthread_mutex_init(&lock,NULL);  // Initialize mutex 
 // Step 3: Create threads to perform transactions 
 for (int i = 0; i < NUM_THREADS; i++) { 
 pthread_create(&threads[i], NULL, perform_transaction, (void*)&transactions[i]); 
